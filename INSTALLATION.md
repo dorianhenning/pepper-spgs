@@ -20,7 +20,10 @@ move to software
 add to path:
 
 ```
-export PYTHONPATH=/path-to-sdk/lib/python2.7/site-packages/
+NAOQI_PATH="{$HOME}/software/pynaoqi-python2.7-2.5.7.1-linux64"
+
+export PYTHONPATH=${PYTHONPATH}:${NAOQI_PATH}/lib/python2.7/site-packages
+export QI_SDK_PREFIX=${NAOQI_PATH}
 ```
 
 
